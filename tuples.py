@@ -1,0 +1,7 @@
+elementOfTuple = ('Belo Horizonte','Fortaleza','São Paulo')
+print('Belo Horizonte' in elementOfTuple)
+tupleOfNames = ('Maria','João','Paulo','Pedro','Maria','Sérgio')
+indexOfTuple = tupleOfNames.index('Maria')
+print(indexOfTuple)
+tupleRange = tuple(range(11))
+print(tupleRange)
