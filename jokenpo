@@ -1,0 +1,29 @@
+import random
+bn = int(input("Enter a number: "))
+rc = random.randint(1,3)
+
+if bn == 1:
+    print("You bet STONE")
+    if rc == 1:
+        print("Computer throws STONE")
+    elif rc == 2:
+        print("Computer throws SCISSORS")
+    elif rc == 3:
+        print("Computer throws PAPER")
+elif bn == 2:
+    print("You bet SCISSORS")
+
+    if rc == 1:
+        print("Computer throws STONE")
+    elif rc == 2:
+        print("Computer throws SCISSORS")
+    elif rc == 3:
+        print("Computer throws PAPER")
+elif bn == 3:
+    print("You bet PAPER")
+    if rc == 1:
+        print("Computer throws STONE")
+    elif rc == 2:
+        print("Computer throws SCISSORS")
+    elif rc == 3:
+        print("Computer throws PAPER")
