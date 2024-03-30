@@ -1,0 +1,11 @@
+a = int(input("Enter your age: "))
+t = 0
+
+if a < 18:
+    t = 18 - a
+    print("It is not time for your enlistment,wait {} years to do it".format(t))
+elif a > 18:
+    t = a - 18
+    print("You are late {} years for your enlistment!,you will be either charged or arrested".format(t))
+elif a == 18:
+    print("It is time for your enlistment,go to a nearby Military Unit")
