@@ -1,0 +1,21 @@
+n = int(input("Enter a number: "))
+o = str(input("Enter an operation: "))
+tm = 0
+ts = 0
+td = 0
+tsub = 0
+for c in range(1,10 + 1):
+    if o == "m":
+        tm = n * c
+        print("{} x {} = {}".format(n,c,tm))
+    elif o == "s":
+        ts = n + c
+        print("{} + {} = {}".format(n,c,ts))
+    elif o == "d":
+        td = n / c
+        print("{} / {} = {}".format(n,c,td))
+    elif o == "sub":
+        tsub = n - c
+        print("{} - {} = {}".format(n,c,tsub))
+    else:
+        print("There is no such operation")
