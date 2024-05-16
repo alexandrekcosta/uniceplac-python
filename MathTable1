@@ -1,0 +1,28 @@
+e = int(input("Enter a password random number: "))
+c = str(input("Enter a preferred math operation: "))
+n1 = int(input("Enter 1st number: "))
+i = 0
+s = 0
+sub = 0
+m = 0
+d = 0
+
+while e != 999:
+    if c == "+":
+        for i in range(1,11):
+            s = n1 + i
+            print(f"{n1} + {i} = {s}")
+        break
+    elif c == "-":
+        for i in range(1,11):
+            sub = n1 - i
+            print(f"{n1} - {i} = {sub}")
+    elif c == "*":
+        for i in range(1,11):
+            m = n1 * i
+            print(f"{n1} * {i} = {m}")
+    elif c == "/":
+        for i in range(1,11):
+            d = n1 / i
+            print(f"{n1} / {i} = {d}")
+    break
