@@ -1,0 +1,9 @@
+n = s = i = 0
+while True:
+    i+= 1
+    n = int(input("Enter a number: "))
+    if n == 999:
+        break
+    s += n
+print(f"The total sum equals: {s}")
+print(f"There's a total of {i} numbers entered")
