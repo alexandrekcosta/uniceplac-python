@@ -1,0 +1,41 @@
+class BankAccount:
+
+    def __init__(self,name,balance,pin):
+        self.name = name
+        self.balance = balance
+        self.pin = pin
+
+    def withdraw(self,quantity):
+        self.quantity = quantity
+        self.balance = quantity - self.balance
+
+    def deposit(self,quantity):
+        self.quantity = quantity
+        self.balance = quantity + self.balance
+
+    def print(self):
+        print("======= ACCOUNT INFO =======")
+        print("Account holder: {}".format(self.name))
+        print("Balance: {}".format(self.balance))
+        print("PIN: {}".format(self.pin))
+        print("=============================")
+
+a1 = BankAccount("Alexandre",10,1234)
+a1.deposit(90)
+a1.withdraw(50)
+a1.print()
+
+a2 = BankAccount("Roshni",1000,1111)
+a2.deposit(500)
+a2.withdraw(200)
+a2.print()
+
+a3 = BankAccount("João",5000,7825)
+a3.deposit(2000)
+a3.withdraw(1000)
+a3.print()
+
+a4 = BankAccount("Shairen",200,2424)
+a4.deposit(20)
+a4.withdraw(100)
+a4.print()
