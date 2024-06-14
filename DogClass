@@ -1,0 +1,17 @@
+class Dog(object):
+
+    def __init__(self,name,age):
+        self.name = name
+        self.age = age
+    def speak(self):
+        print("Hi,my name is {} and i am {} years old!,my weight equals {}!".format(self.name,self.age,self.weight))
+    def change_age(self,age):
+        self.age = age
+    def add_weight(self,weight):
+        self.weight = weight
+abelardo = Dog("Abelardo",55)
+ayub = Dog("Ayub",3)
+abelardo.change_age(3)
+ayub.add_weight(2)
+abelardo.speak()
+ayub.speak()
