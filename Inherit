@@ -1,0 +1,60 @@
+class Bird(object):
+    def __init__(self,name,age,weight):
+        self.name = name
+        self.age = age
+        self.weight = weight
+    def speak(self):
+        print("Hello!,my name is {},i am {} years old and my weight equals {}".format(self.name,self.age,self.weight))
+
+    def change_age(self,age):
+        self.age = age
+
+    def talk(self):
+        print("Peow")
+
+class Cat(Bird):
+    def __init__(self,name,age,colour,weight):
+        super().__init__(name,age,weight)
+        self.colour = colour
+
+    def talk(self):
+        print("Meow")
+
+class Vehicle():
+    def __init__(self,price,gas,colour):
+        self.price = price
+        self.gas = gas
+        self.colour = colour
+
+    def fillUpTank(self):
+        self.gas = 100
+
+    def emptyTank(self):
+        self.gas = 0
+
+    def gasLeft(self):
+        return self.gas
+
+class Car(Vehicle):
+    def __init__(self,price,gas,colour,speed):
+        super().__init__(price,gas,colour)
+        self.speed = speed
+
+    def beep(self):
+        print("Beep beep")
+
+class Truck(Vehicle):
+    def __init__(self,price,gas,colour,tires):
+        super().__init__(self,price,gas,colour)
+        self.tires = tires
+
+    def beep(self):
+        print("Honk honk")
+
+    
+frida = Cat("Frida",3,"Black and White",2)
+frida.talk()
+frida.speak()
+batore = Bird("Batoré",2,0.5)
+batore.talk()
+batore.speak()
