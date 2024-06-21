@@ -1,0 +1,26 @@
+class Custom:
+    def __init__(self,name,email,plan):
+        self.name = name
+        self.email = email
+        self.plan_list = ["Basic","Premium"]
+
+        if self.plan in self.plan_list:
+            self.plan = plan
+        else:
+            print("Invalid plan")
+
+    def change_plan(self,new_plan):
+        if self.plan in self.plan_list:
+            self.plan = new_plan
+        else:
+            print("Invalid plan")
+
+    def watch_film(self,film,basic_film):
+        if self.plan == basic_film:
+            print("You are watching {}".format(film))
+        elif self.plan == "Premium":
+            print("You are watching {}".format(film))
+        elif self.plan == "Basic" and self.plan == "Premium":
+            print("Please,upgrade your account!")
+        else:
+            print("Invalid plan")
