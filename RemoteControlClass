@@ -1,0 +1,12 @@
+class RemoteControl:
+    def __init__(self,colour,width,height,depth):
+        self.colour = colour
+        self.width = width
+        self.height = height
+        self.depth = depth
+
+    def change_channel(self,button):
+        if button == "+":
+            print("Forward channel")
+        elif button == "-":
+            print("Back channel")
